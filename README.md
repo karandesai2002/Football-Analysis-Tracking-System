@@ -18,6 +18,26 @@ Built with **YOLO (Ultralytics)**, **OpenCV**, and dataset tooling from **Robofl
   - Top-speed bar chart
   - Combined analytics dashboard (speed, distance, sprint counts)
 
+## Results (sample outputs)
+
+### Annotated tracking overlay (video frame)
+
+![Annotated output frame](outputs/output_video_screenshot.png)
+
+### Sprint speed analysis (Top 5)
+
+![Top 5 fastest players](outputs/top_speeds.png)
+
+### Team heatmaps
+
+![Team 1 heatmap](outputs/heatmaps/team_1_heatmap.png)
+
+![Team 2 heatmap](outputs/heatmaps/team_2_heatmap.png)
+
+### Player heatmap (example)
+
+![Player heatmap example](outputs/heatmaps/player_12_heatmap.png)
+
 ## Quickstart
 
 ### 1) Create environment and install dependencies
