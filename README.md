@@ -1,22 +1,17 @@
 # Football Analysis Tracking System
 
-End-to-end football video analysis pipeline that performs **detection → tracking → team assignment → ball possession → camera motion compensation → speed & distance estimation → post-tracking analytics**.
+[![Python](https://img.shields.io/badge/Python-3.10+-blue)](https://www.python.org/)
+![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-green)
+![YOLO](https://img.shields.io/badge/YOLO-Ultralytics-red)
 
-Built with **YOLO (Ultralytics)**, **OpenCV**, and dataset tooling from **Roboflow**.
+An end-to-end football video analytics system that performs:
+- Player detection & tracking (**YOLO + ByteTrack**)
+- Team classification (color-based clustering)
+- Ball tracking & possession estimation
+- Camera motion compensation
+- Advanced analytics (heatmaps, sprint analysis)
 
-## What this project produces
-
-- **Annotated output video** with:
-  - Player + referee tracking (IDs over time)
-  - Ball indicator
-  - Team ball possession overlay
-  - Per-player speed/distance overlays
-- **Heatmaps**
-  - Per-player heatmaps
-  - Per-team heatmaps
-- **Sprint / speed analytics**
-  - Top-speed bar chart
-  - Combined analytics dashboard (speed, distance, sprint counts)
+Built for scalable sports analytics and tactical insights.
 
 ## Results (sample outputs)
 
@@ -37,6 +32,30 @@ Built with **YOLO (Ultralytics)**, **OpenCV**, and dataset tooling from **Robofl
 ### Player heatmap (example)
 
 ![Player heatmap example](outputs/heatmaps/player_12_heatmap.png)
+
+## Key Features
+
+- Real-time player tracking with persistent IDs
+- Automatic team assignment using color clustering
+- Ball tracking with possession analysis
+- Perspective transformation to map players onto the pitch
+- Player & team heatmaps
+- Sprint, speed, and distance analytics
+- Combined analytics dashboard
+
+## Outputs
+
+- **Annotated output video** with:
+  - Player + referee tracking (IDs over time)
+  - Ball indicator
+  - Team ball possession overlay
+  - Per-player speed/distance overlays
+- **Heatmaps**
+  - Per-player heatmaps
+  - Per-team heatmaps
+- **Sprint / speed analytics**
+  - Top-speed bar chart
+  - Combined analytics dashboard (speed, distance, sprint counts)
 
 ## Quickstart
 
@@ -132,6 +151,14 @@ Note: videos are ignored by git by default (to keep the public repo small). If y
 - **OpenCV** (video I/O + rendering)
 - **NumPy / Pandas** (data handling)
 - **Matplotlib** (charts, dashboards, heatmaps)
+
+## Future Work
+
+- Pass detection and pass network visualization
+- Expected Threat (xT) modeling
+- Player influence maps
+- Tactical formation detection over time
+- Real-time deployment
 
 ## License
 
