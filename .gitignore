@@ -1,0 +1,40 @@
+.DS_Store
+**/.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.pkl
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# ML / training artifacts
+runs/
+
+# Roboflow dataset exports (keep metadata, ignore heavy splits)
+training/**/train/
+training/**/valid/
+training/**/test/
+
+# Large local assets (keep repo lightweight)
+models/*.pt
+*.pt
+input_videos/
+output_videos/*.avi
+output_videos/*.mp4
+
+# Generated outputs (keep charts/images, ignore huge videos)
+outputs/*.avi
+outputs/*.mp4
