@@ -15,6 +15,12 @@ Built for scalable sports analytics and tactical insights.
 
 ## Results (sample outputs)
 
+### Input vs Output (preview)
+
+| Input (raw video) | Output (tracked + analytics overlays) |
+| --- | --- |
+| ![Input preview GIF](outputs/gifs/input_preview.gif) | ![Output preview GIF](outputs/gifs/output_preview.gif) |
+
 ### Annotated tracking overlay (video frame)
 
 ![Annotated output frame](outputs/output_video_screenshot.png)
